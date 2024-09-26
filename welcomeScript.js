@@ -16,6 +16,7 @@ gsap.to(contents, {
     },
 });
 
+//Sound
 document.getElementById("buttonEnter").addEventListener("click", function() {
     var audio = document.getElementById("clickAudio");
     
@@ -30,26 +31,8 @@ document.getElementById("buttonEnter").addEventListener("click", function() {
     };
 });
 
-//Mute and unmuting
-document.addEventListener("DOMContentLoaded", function() {
-    var audio = document.getElementById("bg_music");
-    var muteButton = document.getElementById("muteButton");
 
-    // Update images
-    function updateMuteButton() {
-        if (audio.muted) {
-            muteButton.src = "white_mute.png";  
-        } else {
-            muteButton.src = "white_unmute.png";  
-        }
-    }
-    updateMuteButton();
 
-    muteButton.addEventListener("click", function() {
-        audio.muted = !audio.muted;
-        updateMuteButton();
-    });
-});
 
 
 

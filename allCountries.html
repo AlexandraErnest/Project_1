@@ -15,9 +15,12 @@
             <li>Choose again?</li>
             <li>Info</li>
         </ul> -->
-        <audio id="bg_music" controls autoplay src="background_music.mp3"></audio>
+        <audio autoplay id="myAudio">
+            <source src="background_music.mp3" type="audio/mpeg">
+        </audio>
         <div class="search">
-              <img id="muteButton" src="white_unmute.png" alt="Mute/Unmute" style="cursor:pointer;">
+              <img id="playButton" src="white_unmute.png" alt="Mute/Unmute" style="cursor:pointer;" onclick="playAudio()">
+              <img id="pauseButton" src="white_mute.png" alt="Mute/Unmute" style="cursor:pointer;" onclick="pauseAudio()">
         </div>
      </header>
 

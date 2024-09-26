@@ -211,28 +211,23 @@ function titleAnim() {
   
  
 //Mute and unmuting
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOM fully loaded and parsed");
-  var audio = document.getElementById("bg_music");
-  var muteButton = document.getElementById("muteButton");
-
-  // Update images
-  function updateMuteButton() {
-      if (audio.muted) {
-          muteButton.src = "white_mute.png";  
-      } else {
-          muteButton.src = "white_unmute.png";  
-      }
-  }
-  updateMuteButton();
-
-  muteButton.addEventListener("click", function() { 
-      audio.muted = !audio.muted;
-      updateMuteButton();
+function playAudio() {
+  const audio = document.getElementById("myAudio");
+  audio.play().catch(error => {
+      console.log("Error playing audio:", error);
   });
-});
+}
 
+function pauseAudio() {
+  const audio = document.getElementById("myAudio");
+  audio.pause();
+}
 
+  document.getElementById("playBtn").onclick = function() {
+      playAudio();
+  }
 
-
+  document.getElementById("pauseBtn").onclick = function() {
+      pauseAudio();
+  }
 
