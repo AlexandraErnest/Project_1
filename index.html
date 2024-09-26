@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Page</title>
+    <link rel="stylesheet" href="welcomeStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <img src="images_and_videos/stars_transp.gif" alt="usa">
+
+    <a class="link" href="#content1"> Home </a> 
+    <a class="link" href="#content2"> About Us </a> 
+    <a class="link" href="#content3"> Contact Us </a> 
+    <a class="link" href="#content4"> Our Team </a>
+    </header>
+
+    <section id="horizontal">
+        <div class="content" id="content1">
+            <p> Content 1</p>
+        </div>
+        <div class="content" id="content2">
+            <p> Content 2</p>
+        </div>
+        <div class="content" id="content3">
+            <p> Today we will Travel Around the World!!</p>
+        </div>
+        <div class="content" id="content4">
+            <p> Content 4</p>
+        </div>
+        
+        <audio id="clickAudio" src="woosh_sound.mp3"></audio>
+
+        <div class="content" id="content5">
+            <button class="enterButton" id="buttonEnter">Start Traveling</button>
+        </div>
+    </section>
+
+
+    <!-- GSAP Installation things below -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="welcomeScript.js"></script>
+</body>
+</html>

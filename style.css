@@ -1,0 +1,503 @@
+/* Google Fonts - Gowun Batang*/
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+/*Css for Map Below*/
+body {
+    margin:0;
+    font-family: Gowun Batang;
+    background: #1c1c1c;
+    color: #eee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.world-map {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+}
+
+.world-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    margin: 2em 0;
+    padding: 0 1em;
+}
+
+.title p {
+    max-width: 500px;
+    margin: 1em auto;
+    line-height: 27px;
+}
+
+.pin {
+    background: #830909;
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%; 
+}
+
+.pin::before {
+   content: '';
+   background: #d42a2a; 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   animation: pulse 1.3s ease-in-out infinite;
+}
+
+/* box around Country Name */
+.pin span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    cursor: pointer;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #545454;
+    border-radius: 3em;
+    padding: 0.3em 0.6em;
+    font-size: 0.9em;
+    transition: transform 0.3s ease-in;
+}
+
+.pin span:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+/* positions for all countries */
+.usa {
+    top: 38%;
+    left: 20%;
+}
+.spain {
+    top: 38%;
+    left: 45.5%;
+}
+.ethiopia {
+    top: 55%;
+    left: 58%;
+}
+.japan {
+    top: 35%;
+    left: 84.5%;
+}
+.india {
+    top: 47%;
+    left: 69%;
+}
+
+/* animations of dots on map*/
+@keyframes pulse {
+    100% {
+        opacity: 0;
+        transform: 
+            translate(-50%, -50%)
+            scale(2.5);
+    }
+}
+/* Image slider code below */
+header {
+    width: 1200px;
+    max-width: 90%; 
+    margin: auto;
+    display: grid;
+    grid-template-columns: 150px 1fr 50px; /*change this for logo*/
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header .logo {
+    font-weight: bold;
+}
+
+header .menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.slider {
+    height: 100vh; /* height of the slider is equal to height of the screen */
+    margin-top: -50px;
+    position: relative;
+}
+
+.slider .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0; /*we only want to show active images and text*/
+    /* Create pop up effect */
+    transition: .5s;
+}
+
+.slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slider .list .item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, #000000 40%, transparent  
+    ); /*Gives the images the gradient look*/
+}
+
+.slider .list .item .content { /*Use this also when making horizontal scroll content*/
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px; 
+    max-width: 80%;
+    z-index: 1; /*So it overlaps the images*/
+}
+
+.slider .list .item .content p:nth-child(1) {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.slider .list .item .content h2 {
+    font-size: 65px;
+    margin: 0;
+}
+
+.slider .list .item.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+@keyframes showContent {
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active button,
+.slider .list .item.active p:nth-child(3) {
+    transform: translateY(30px); 
+    filter: blur(20px); /*Creates blur effect when it is loading in*/
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards; /*the '1' means let it run once*/
+}
+/* Get the header tag to appear later than the rest */
+.slider .list .item.active h2 {
+    animation-delay: 1s;
+}
+
+.slider .list .item.active p:nth-child(3) {
+    animation-duration: 1.3s;
+}
+
+.slider .list .item.active button {
+    animation-duration: 1.3s;
+}
+
+.arrows {
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+
+.arrows button {
+    background-color: #eee5;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+    transition: .5s;
+}
+
+.arrows button:hover {
+    background-color: #eee;
+    color: #000000;
+}
+
+button {
+    background-color: #eee5;
+    border: none;
+    font-family: Gowun Batang;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eee;
+    color: #000000;
+}
+
+/* Thumbnail Images */
+.thumbnail {
+    position: absolute;
+    bottom: 30px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: center;
+}
+
+.thumbnail::-webkit-scrollbar {
+    width: 0; /*Makes scrollbar disappear */
+}
+
+.thumbnail .item {
+    width: 150px;
+    height: 220px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0;
+}
+
+/* makes the images not distroted */
+.thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.thumbnail .item.active {
+    filter: brightness(1.2); /*Makes active image brighter than the rest*/
+}
+
+.thumbnail .item .content {
+    position: absolute;
+    inset: auto 10px 10px 10px;
+}
+
+
+
+/* COUNTRY PAGES CODE */
+nav{
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  nav ul{
+    display: flex;
+  }
+  nav ul li{
+    list-style: none;
+  }
+  nav ul li:not(:first-child){
+    margin-left: 20px;
+  }
+  
+
+  .section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+  .section0 {
+    height:100vh;
+    background-image: linear-gradient(to top, 
+    #000000 5%, transparent), url('images_and_videos/world_around.gif');
+    background-size: cover;
+    /* background-image: url("images_and_videos/spain.jpg");
+    background-size: cover; fix up */
+  }
+  .section__wrapp{
+    height: 1000px;
+  }
+  h1{
+    margin:0;
+    font-size: 100px;
+    text-transform: uppercase;
+  }
+
+  h2{
+    margin: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  .section1 .section2  .section3
+  .section4 .section5 {
+    background: #515151;
+  }
+  .chapter {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: #000;
+    z-index: 4;
+    pointer-events: none;
+  }
+  .chapter__above,
+  .chapter__title{
+    margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+    line-height: 1
+  }
+  
+  .chapter__above {
+      font-size: 35px;
+      color: #BFBFBF;
+  }
+  
+  .chapter__title {
+      font-size: 80px;
+    color: rgb(6, 2, 135);
+  }
+  
+  .chapter__title,
+  .chapter__above{
+  	/* opacity: 0; */
+  }
+
+.PageImg {
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+    justify-content: center;
+    border: none;
+    font-family: Gowun Batang;
+    font-size: x-large;
+    color: #eee;
+    opacity: 0.4;
+    transition: .3s;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.againButton{
+    background-color: #eee5;
+    border: none;
+    font-family: Gowun Batang;
+    width: 330px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+    transition: .5s;
+    cursor: pointer;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 1200%);
+}
+
+.desc {
+    text-align: center;
+}
+
+.otherTitle{
+    text-align: center;
+}
+
+/* Responsive- update later*/
+@media screen and (max-width: 768px) {
+    .thumbnail {
+        justify-content: start;
+    }
+    .slider .list .item .content h2{
+        font-size: 60px;
+    }
+
+    .slider .list .item .content p{
+        font-size: 15px;
+    }
+
+    .arrows{
+        top: 20%;
+    }
+    .pin span {
+        font-size: 2vw; 
+        padding: 0.3em 2vw; 
+    }
+    .chapter__title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider .list .item .content h2{
+        font-size: 40px;
+    }
+    .slider .list .item .content p{
+        font-size: 15px;
+    }
+
+    .pin span {
+        font-size: 2vw; 
+        padding: 0.3em 2.5vw;
+    }
+    a {
+        font-size: 15px;
+    }
+    .chapter__title {
+        font-size: 25px;
+    }
+}

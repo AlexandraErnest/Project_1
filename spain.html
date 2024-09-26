@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spain Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#section0">Intro</a></li>
+          <li><a href="#section1">Founded</a></li>
+          <li><a href="#section2">City</a></li>
+          <li><a href="#section3">Food</a></li>
+          <li><a href="#section4">Landmark</a></li>
+          <li><a href="#section5">Fun Fact</a></li>
+        </ul>
+    </nav>
+      <div id="section0" class="section section0">
+        <h1>Spain</h1>
+      </div>
+      
+      <div id="section1" class="section chap-anim section1">
+        
+        <div class="chapter">
+          <div class="chapter__txt">
+            <div class="chapter__above">Part 1</div>
+            <h2 class="chapter__title color_grad1">When was it Founded?</h2>
+          </div>
+        </div>
+        
+        <div class="section__wrapp">
+          <h2 class="otherTitle">Founded When?</h2>
+          <p class="desc">1492 - The Christian Kingdoms of Castile and Aragon conquer the Emirate of Granada, ending <br>
+            nearly 800 years of Muslim rule in the south and founding modern Spain as a united state. <br>
+             Christopher Columbus arrives in the Americas, heralding the conquest of much of South and <br>
+             Central America. </p>
+          <img class="PageImg" src="images_and_videos/spain_2.jpg" alt="spain" style="width: 80%;">
+        </div>
+      </div>
+      
+      <div id="section2" class="section chap-anim section2">
+        <div class="chapter">
+                          <div class="chapter__txt">
+                              <div class="chapter__above">Part 2</div>
+                              <h2 class="chapter__title color_grad1">Best City</h2>
+                          </div>
+                      </div>
+        
+        <div class="section__wrapp">
+          <h2 class="otherTitle">'Best' City</h2>
+          <p class="desc"> It’s impossible to talk about cities in Spain without talking about the capital city. <br>
+            Madrid offers a variety of cuisine, suitable to almost any palette. And because of the <br>
+            large number of people that move into the city, you will also find a mix of citizens <br>
+            from all over the world. The city also supports a robust nightlife with everything from <br>
+            tapas bars to flamenco theaters and nightclubs. </p>
+            <img class="PageImg" src="images_and_videos/spain_3.jpg" alt="spain" style="width: 80%;">
+        </div>
+      </div>
+      <div id="section3" class="section chap-anim section3">
+        <div class="chapter">
+                          <div class="chapter__txt">
+                              <div class="chapter__above">Part 3</div>
+                              <h2 class="chapter__title color_grad1">Food/National Dish</h2>
+                          </div>
+                      </div>
+        
+        <div class="section__wrapp">
+          <h2 class="otherTitle">National Dish</h2>
+          <p class="desc">Food is a big part of Spanish culture, families use meals to socialize and meet at the <br>
+            end of the day. Many consider Paella as the National dish of Spain, that has as many variations as <br>
+            there are cooks! One thing every variation of paella has in common besides the rice and saffron is <br> 
+            that it is a very social culinary occasion. Families congregate to eat paella not only in restaurants;<br> 
+            but also at their homes, at mountain picnic sites and, on the beach.</p>
+            <img class="PageImg" src="images_and_videos/spain_4.jpg" alt="spain" style="width: 80%;">
+        </div>
+      </div>
+      <div id="section4" class="section chap-anim section4">
+        <div class="chapter">
+                          <div class="chapter__txt">
+                              <div class="chapter__above">Part 4</div>
+                              <h2 class="chapter__title color_grad1">Popular Landmark</h2>
+                          </div>
+                      </div>
+        
+        <div class="section__wrapp">
+          <h2 class="otherTitle">Popular Landmark</h2>
+          <p class="desc">The Alhambra is perhaps the most famous monument in Spain. You'll find it in Granada, <br>
+            and you'll be amazed at its palaces and gardens. Don't miss the Courtyard of the Lions. Designed as <br>
+            a military zone at the beginning, the Alhambra became the royal residence and court of Granada in the <br>
+            mid-13th century after the establishment of the Nasrid Kingdom and the construction of the first palace <br>
+             by the founding king Mohammed ibn Yusuf Ben Nasr, better known as Alhamar. </p>
+            <img class="PageImg" src="images_and_videos/spain_5.jpg" alt="spain" style="width: 80%;">
+        </div>
+      </div>
+      <div id="section5" class="section chap-anim section5">
+        <div class="chapter">
+                          <div class="chapter__txt">
+                              <div class="chapter__above">Part 5</div>
+                              <h2 class="chapter__title color_grad1">Fun Fact</h2>
+                          </div>
+                      </div>
+        
+        <div class="section__wrapp">
+          <h2 class="otherTitle">Fun Fact</h2>
+          <p class="desc">Spain has the Largest fresh produce market in Europe. If you travel to little Valencia City, <br>
+             you will find Europe’s largest fresh produce market. Mercat Central boasts more than 1200 stalls, <br>
+             and is situated in the city’s charming old town. On a bigger scale in terms of produce, Spain <br>
+             is the world’s largest producer and consumer of olive oil. In January 2022, Spain produced around <br>
+             7682 tons of olive oil.</p>
+            <img class="PageImg" src="images_and_videos/spain_6.jpg" alt="spain" style="width: 80%;">
+          <button class="againButton" onclick="goToPage('allCountries.html')">Choose Another Country?</button>
+        </div>
+      </div>
+
+    <!-- GSAP Installation and Script File Below -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

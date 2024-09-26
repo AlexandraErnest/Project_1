@@ -1,0 +1,32 @@
+Image Sources 
+
+Spain - https://www.trafalgar.com/real-word/12-photos-that-will-make-you-want-to-visit-spain-this-year/
+India - https://www.britannica.com/place/India
+Ethiopia - https://www.originaltravel.co.uk/travel-blog/sacred-landscapes-of-ethiopia
+Japan - https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nippon.com%2Fen%2Fjapan-topics%2Fg00681%2Fa-history-of-osaka-japan%25E2%2580%2599s-city-of-water.html&psig=AOvVaw3J_5hrcoUcwb_7kZXV2vhu&ust=1727128094234000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqGAoTCLDtoNjD14gDFQAAAAAdAAAAABCcAQ
+USA - https://pixabay.com/photos/usa-city-landscape-manhattan-nyc-3971140/
+World gif - https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2F4k-earth&psig=AOvVaw0toi3DG1WpnjUX8dPFa6VF&ust=1727395526768000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqGAoTCJjkwPen34gDFQAAAAAdAAAAABC2AQ
+Stars Welcome Page - https://images.app.goo.gl/ye8WtaRqUQCCRqV7A 
+
+Spain Pics
+https://www.edrawmind.com/article/history-of-spain.html
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.barcelo.com%2Fguia-turismo%2Fen%2Fspain%2Fmadrid%2Fthings-to-do%2Fwhat-to-visit-in-madrid%2F&psig=AOvVaw1fgAdfKEMi9lXZQ6L55SXQ&ust=1727402106466000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDF97jA34gDFQAAAAAdAAAAABAM 
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fjoseandres.substack.com%2Fp%2Fwhats-in-a-real-paella&psig=AOvVaw3zKpPH8jMkEa5Z3nuPaPrA&ust=1727402191646000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDW6eHA34gDFQAAAAAdAAAAABBr
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.travelandleisure.com%2Fattractions%2Flandmarks-monuments%2Fsecrets-of-alhambra&psig=AOvVaw22C1svRTK9CWSnby5pd7do&ust=1727402261224000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNiV54LB34gDFQAAAAAdAAAAABAU
+https://visitspainandmediterranean.com/specialty-foods-and-markets-in-valencia-spain/
+
+
+USA Pics
+
+Help Video Sources
+
+Map Background with pins -  https://youtu.be/lxYqxlX_zHw?si=D9Xji6UqhoUeU7-n
+Countries image slider - https://youtu.be/iBcjzaOvE94?si=-QdyJM0FJzp_Itpq
+Gsap Horizontal and Vertical Scroll - https://www.youtube.com/watch?v=QlApLiVlLAw
+
+
+Other Sources 
+
+Chapter animation in two directions - https://codepen.io/DmitrN/pen/WNYdgve
+Sound Effect - https://www.youtube.com/watch?v=HDRVzwNkV20;
+Background Music - https://www.youtube.com/watch?v=rKi3oL2UDew&list=PLQwRmTwWx0uaoRXVcKbUDW0wm8G_WJzDI&index=10 
