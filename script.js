@@ -117,7 +117,7 @@ function chapterAnim() {
 
 		const gsapChapter = gsap.utils.toArray('.chap-anim');
 		gsapChapter.forEach((gsCh) => {
-      
+      //.find searchs for an element in an array 
 			const chapterAbove = $(gsCh).find('.chapter__above');
 			const chapterTitle = $(gsCh).find('.chapter__title');
       const chapterChapter = $(gsCh).find('.chapter');
