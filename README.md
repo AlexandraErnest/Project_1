@@ -27,7 +27,7 @@
 
 ## **Live Demo**
 
-- Include a link to the live version of the project hosted on GitHub Pages.
+- https://alexandraernest.github.io/Project_1/
 
 ## **Credits**
 
